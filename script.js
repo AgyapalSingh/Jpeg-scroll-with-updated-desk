@@ -308,30 +308,30 @@ tl_product_image_m.from(".benefits-product_m li", {
   },
 });
 
-// tl_product_ingredient_m.from(".ingrdient-card_m", {
-//   y: 10,
-//   duration: 0.5,
-//   opacity: 0,
-//   delay: 1,
-//   stagger: 1,
-//   scrollTrigger: {
-//     trigger: ".ingrdient-card_m",
-//     start: "top 60%",
-//     end: "top 40%",
-//     scrub: 1,
-//   },
-// });
-
-document.querySelectorAll(".ingrdient-card_m").forEach((card) => {
-  gsap.to(card, {
-    scale: 0.7,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: card,
-      start: "top 5%",
-      end: "bottom 5%",
-      // markers: true,
-      scrub: true,
-    },
-  });
+tl_product_ingredient_m.from(".ingrdient-card_m", {
+  y: 10,
+  duration: 0.5,
+  opacity: 0,
+  delay: 1,
+  stagger: 1,
+  scrollTrigger: {
+    trigger: ".ingrdient-card_m",
+    start: "top 60%",
+    end: "top 40%",
+    scrub: 1,
+  },
 });
+
+// document.querySelectorAll(".ingrdient-card_m").forEach((card) => {
+//   gsap.to(card, {
+//     scale: 0.7,
+//     opacity: 0,
+//     scrollTrigger: {
+//       trigger: card,
+//       start: "top 5%",
+//       end: "bottom 5%",
+//       // markers: true,
+//       scrub: true,
+//     },
+//   });
+// });
