@@ -176,8 +176,9 @@ tl_product_title_m.to(
     scrollTrigger: {
       trigger: ".product-title_m",
       start: "top top",
-      end: "50% top",
+      end: "30% top",
       scrub: 5,
+      // markers: true,
       onUpdate: (self) => {
         const progress_m = self.progress;
         const textLength_m = Math.round(progress_m * fullText_m.length);
@@ -200,23 +201,23 @@ tl_product_title_m.to(
   }
 );
 
-tl_product_image_m.to(title_m, {
+tl_product_title_m.to(title_m, {
   top: "10%",
   ease: "power1.out",
   scrollTrigger: {
-    trigger: "#frame_m",
-    start: "top 50%",
-    end: "top 25%",
+    trigger: ".product-image_m",
+    start: "top 65%",
+    end: "top 50%",
     scrub: 1,
   },
 });
 
-tl_product_image_m.to(title_m, {
+tl_product_title_m.to(title_m, {
   opacity: 0,
   scrollTrigger: {
     trigger: ".product-image_m",
-    start: "top 40%",
-    end: "top 25%",
+    start: "top 10%",
+    end: "top 0%",
     scrub: 1,
   },
 });
@@ -272,20 +273,35 @@ function loadImage_m(index) {
 }
 
 function startAnimation_m() {
-  var tl_m = gsap.timeline({
+  tl_product_title_m = gsap.timeline({
     scrollTrigger: {
       trigger: ".product-image_m ",
-      start: "top 65%",
-      end: "top 5%",
+      start: "top 80%",
+      end: "top 20%",
       scrub: 1,
       // markers: true
     },
   });
 
-  tl_m.to(frames_m, {
+  tl_product_title_m.to(frames_m, {
     currentIndex: frames_m.maxIndex,
     onUpdate: function () {
       loadImage_m(Math.floor(frames_m.currentIndex));
+    },
+  });
+
+  tl_product_title_m.from(".benefits-product_m li", {
+    y: 10,
+    duration: 0.5,
+    opacity: 0,
+    delay: -1,
+    stagger: 1,
+  
+    scrollTrigger: {
+      trigger: ".benefits-product_m li",
+      start: "top 55%",
+      end: "top 50%",
+      scrub: 1,
     },
   });
 }
@@ -293,20 +309,6 @@ function startAnimation_m() {
 preloadImages_m();
 
 
-tl_product_image_m.from(".benefits-product_m li", {
-  y: 10,
-  duration: 0.5,
-  opacity: 0,
-  delay: -1,
-  stagger: 1,
-
-  scrollTrigger: {
-    trigger: ".benefits-product_m li",
-    start: "top 55%",
-    end: "top 50%",
-    scrub: 1,
-  },
-});
 
 tl_product_ingredient_m.from(".ingrdient-card_m", {
   y: 10,

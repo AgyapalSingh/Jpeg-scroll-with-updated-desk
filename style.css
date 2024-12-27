@@ -277,8 +277,9 @@ canvas {
 
 /* 1. Title Div */
 .product-title_m {
-  height: 150vh;
+  height: 100vh;
   overflow: hidden;
+  /* border: 1px solid red; */
 }
 
 /* 1.1 Animated Tittle */
@@ -300,8 +301,9 @@ canvas {
 .product-image-benefits_m {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-items: center;
+  /* border: 1px solid rgb(0, 255, 85); */
 }
 
 /* 2.1 Product Image Div */
@@ -310,6 +312,7 @@ canvas {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border: 1px solid yellow; */
 }
 
 /* 2.1.1 Canvas id- #frame */
