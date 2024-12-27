@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Anti stretch mark body butter using gsap and scroll trigger"
+    />
+    <title>Anti Stretch Mark Body Butter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- FOR MOBILE -->
+    <div class="launch-page-container_m">
+      <div class="product-title_m">
+        <h1 id="animated-title_m">A.S.M.B.B.</h1>
+      </div>
+
+      <div class="product-image-benefits_m">
+        <div class="product-image_m">
+          <canvas id="frame_m"> </canvas>
+        </div>
+
+        <div class="product-benefits-right_m">
+          <ul class="benefits-product_m">
+            <li>Stretch mark reduction</li>
+            <li>Rich, creamy texture</li>
+            <li>Intense moisture</li>
+            <li>Smooth, nourished skin</li>
+            <li>Elasticity boost</li>
+            <li>Skin regeneration</li>
+            <li>Natural extracts</li>
+            <li>Soothing fragrance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product-ingredients_m">
+        <div class="ingrdient-card_m">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/3_Ingredient_Italian-Cocoa-Butter.png?v=1735034199"
+            loading="lazy"
+            alt="Italian Cocoa Butter"
+            width="100%"
+            height="100%"
+          />
+          <p class="ingredient-name_m">Italian Cocoa Butter</p>
+          <span class="ingredient-info_m"
+            >Deeply hydrates and improves skin elasticity.</span
+          >
+        </div>
+
+        <div class="ingrdient-card_m">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/4_Ingredient_Shea-Butter.png?v=1735034198"
+            loading="lazy"
+            alt="Shea Butter"
+            width="100%"
+            height="100%"
+          />
+          <p class="ingredient-name_m">Shea Butter</p>
+          <span class="ingredient-info_m"
+            >Nourishes and softens dry, rough skin.</span
+          >
+        </div>
+
+        <div class="ingrdient-card_m">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/1_Ingredient_Arabica-Coffee.png?v=1735034198"
+            loading="lazy"
+            alt="Coffee Arabica Seed"
+            width="100%"
+            height="100%"
+          />
+          <p class="ingredient-name_m">Coffee Arabica Seed</p>
+          <span class="ingredient-info_m">Tones and revitalizes skin.</span>
+        </div>
+
+        <div class="ingrdient-card_m">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/2_Ingredient_Crocus-Bulb.png?v=1735034198"
+            loading="lazy"
+            alt="Crocus Chrysanthus Bulb Extract"
+            width="100%"
+            height="100%"
+          />
+          <p class="ingredient-name_m">Crocus Chrysanthus Bulb Extract</p>
+          <span class="ingredient-info_m"
+            >Boosts collagen for firmer skin.</span
+          >
+        </div>
+
+        <div class="ingrdient-card_m">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/6_Ingredient_Senegal-Gum.png?v=1735038359"
+            loading="lazy"
+            alt="Acacia Senegal Gum"
+            width="100%"
+            height="100%"
+          />
+          <p class="ingredient-name_m">Acacia Senegal Gum</p>
+          <span class="ingredient-info_m"
+            >Enhances skin hydration and resilience.</span
+          >
+        </div>
+
+        <div class="ingrdient-card_m">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/5_Ingredient_Hyaluronic-Acid.png?v=1735038360"
+            loading="lazy"
+            alt="Hyaluronic Acid"
+            width="100%"
+            height="100%"
+          />
+          <p class="ingredient-name_m">Hyaluronic Acid</p>
+          <span class="ingredient-info_m"
+            >Locks in moisture for soft, glowing skin.</span
+          >
+        </div>
+      </div>
+
+      <div class="pre-order_m">
+        <a
+          href="https://uniqaya.com/products/uniqaya-body-butter-with-italian-cocoa-butter-shea-hibiscus-extract"
+          >Pre-Order Now</a
+        >
+      </div>
+
+      <div class="products-results_m"></div>
+
+      <div class="related-products_m"></div>
+    </div>
+
+    <!-- FOR DESKTOP -->
+    <div class="launch-page-container">
+      <div class="product-title">
+        <h1 id="animated-title">A.S.M.B.B.</h1>
+      </div>
+
+      <div class="product-image-benefits">
+        <div class="product-benefits-left">
+          <ul class="benefits-product">
+            <li>Stretch mark reduction</li>
+            <li>Rich, creamy texture</li>
+            <li>Intense moisture</li>
+            <li>Smooth, nourished skin</li>
+          </ul>
+        </div>
+
+        <div class="product-image">
+          <canvas id="frame"> </canvas>
+        </div>
+
+        <div class="product-benefits-right">
+          <ul class="benefits-product">
+            <li>Elasticity boost</li>
+            <li>Skin regeneration</li>
+            <li>Natural extracts</li>
+            <li>Soothing fragrance</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="product-ingredients">
+        <div class="ingrdient-card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/3_Ingredient_Italian-Cocoa-Butter.png?v=1735034199"
+            loading="lazy"
+            alt="Italian Cocoa Butter"
+          />
+          <p class="ingredient-name">Italian Cocoa Butter</p>
+          <span class="ingredient-info"
+            >Deeply hydrates and improves skin elasticity.</span
+          >
+        </div>
+
+        <div class="ingrdient-card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/4_Ingredient_Shea-Butter.png?v=1735034198"
+            loading="lazy"
+            alt="Shea Butter"
+          />
+          <p class="ingredient-name">Shea Butter</p>
+          <span class="ingredient-info"
+            >Nourishes and softens dry, rough skin.</span
+          >
+        </div>
+
+        <div class="ingrdient-card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/1_Ingredient_Arabica-Coffee.png?v=1735034198"
+            loading="lazy"
+            alt="Coffee Arabica Seed"
+          />
+          <p class="ingredient-name">Coffee Arabica Seed</p>
+          <span class="ingredient-info">Tones and revitalizes skin.</span>
+        </div>
+
+        <div class="ingrdient-card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/2_Ingredient_Crocus-Bulb.png?v=1735034198"
+            loading="lazy"
+            alt="Crocus Chrysanthus Bulb Extract"
+          />
+          <p class="ingredient-name">Crocus Chrysanthus Bulb Extract</p>
+          <span class="ingredient-info">Boosts collagen for firmer skin.</span>
+        </div>
+
+        <div class="ingrdient-card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/6_Ingredient_Senegal-Gum.png?v=1735038359"
+            loading="lazy"
+            alt="Acacia Senegal Gum"
+          />
+          <p class="ingredient-name">Acacia Senegal Gum</p>
+          <span class="ingredient-info"
+            >Enhances skin hydration and resilience.</span
+          >
+        </div>
+
+        <div class="ingrdient-card">
+          <img
+            src="https://cdn.shopify.com/s/files/1/0589/0192/1956/files/5_Ingredient_Hyaluronic-Acid.png?v=1735038360"
+            loading="lazy"
+            alt="Hyaluronic Acid"
+          />
+          <p class="ingredient-name">Hyaluronic Acid</p>
+          <span class="ingredient-info"
+            >Locks in moisture for soft, glowing skin.</span
+          >
+        </div>
+      </div>
+
+      <div class="pre-order">
+        <a
+          href="https://uniqaya.com/products/uniqaya-body-butter-with-italian-cocoa-butter-shea-hibiscus-extract"
+          >Pre-Order Now</a
+        >
+      </div>
+
+      <div class="products-results"></div>
+
+      <div class="related-products"></div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+      integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
