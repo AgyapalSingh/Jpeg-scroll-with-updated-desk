@@ -219,6 +219,7 @@ tl_product_title_m.to(title_m, {
     start: "top 10%",
     end: "top 0%",
     scrub: 1,
+    // markers: true,
   },
 });
 
@@ -299,11 +300,24 @@ function startAnimation_m() {
   
     scrollTrigger: {
       trigger: ".benefits-product_m li",
-      start: "top 55%",
-      end: "top 50%",
+      start: "top 75%",
+      end: "top 55%",
       scrub: 1,
+      // markers: true,
     },
   });
+
+
+  tl_product_title_m.to(".product-image_m", {
+    y: -300,
+    scrollTrigger: {
+      trigger: ".benefits-product_m li",
+      start: "top 49%",
+      end: "top 30%",
+      scrub: 1,
+      // markers: true
+    },
+    })
 }
 
 preloadImages_m();
