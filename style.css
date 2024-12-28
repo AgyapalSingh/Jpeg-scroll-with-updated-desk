@@ -377,6 +377,8 @@ canvas {
   flex-direction: column;
   font-family: "Poppins", sans-serif;
   margin-top: 50px;
+  width: 400px;
+  border: 1px solid rgb(245, 245, 245);
 }
 
 /* 3.1 Ingredient Card */
@@ -398,11 +400,12 @@ canvas {
 
 /* 3.1.1 Ingredient card Image */
 .ingrdient-card_m img {
-  width: 300px;
-  height: 300px;
+  width: 200px;
+  height: 200px;
   animation: moveUpDown 2s ease-in-out infinite;
   display: block;
   margin: 0 auto;
+  margin: 0px 50px;
 }
 
 @keyframes moveUpDown {
