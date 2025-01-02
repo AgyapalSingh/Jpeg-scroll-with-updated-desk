@@ -65,7 +65,7 @@ const context = canvas.getContext("2d");
 
 const frames = {
   currentIndex: 0,
-  maxIndex: 18,
+  maxIndex: 27,
 };
 
 let imagesLoaded = 0;
@@ -74,9 +74,15 @@ const images = [];
 
 function preloadImages() {
   for (var i = 0; i < frames.maxIndex; i++) {
-    const imageUrl = `https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Sequence${i
-      .toString()
-      .padStart(3, "0")}.png?v=1734495548`;
+    // const imageUrl = `https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Sequence${i
+    //   .toString()
+    //   .padStart(3, "0")}.png?v=1734495548`;
+
+    //   https://cdn.shopify.com/s/files/1/0589/0192/1956/files/BodyButter000.png?v=1735800447
+      const imageUrl = `https://cdn.shopify.com/s/files/1/0589/0192/1956/files/BodyButter${i
+        .toString()
+        .padStart(3, "0")}.png?v=1735800447`;
+        // console.log(imageUrl);
     const img = new Image();
     img.src = imageUrl;
     img.onload = () => {
@@ -97,7 +103,7 @@ function loadImage(index) {
     canvas.height = window.innerHeight;
     const scaleX = canvas.width / img.width;
     const scaleY = canvas.height / img.height;
-    const scale = 1.5;
+    const scale = 1.2;
     const newWidth = img.width * scale;
     const newHeight = img.height * scale;
     const offsetX = (canvas.width - newWidth) / 2;
@@ -114,7 +120,7 @@ function startAnimation() {
   tl_product_title = gsap.timeline({
     scrollTrigger: {
       trigger: ".product-image ",
-      start: "top 80%",
+      start: "top 90%",
       end: "top 20%",
       scrub: 1,
       
@@ -228,7 +234,7 @@ const context_m = canvas_m.getContext("2d");
 
 const frames_m = {
   currentIndex: 0,
-  maxIndex: 18,
+  maxIndex: 27,
 };
 
 let imagesLoaded_m = 0;
@@ -237,9 +243,13 @@ const images_m = [];
 
 function preloadImages_m() {
   for (var i = 0; i < frames_m.maxIndex; i++) {
-    const imageUrl_m = `https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Sequence${i
+    // const imageUrl_m = `https://cdn.shopify.com/s/files/1/0589/0192/1956/files/Sequence${i
+    //   .toString()
+    //   .padStart(3, "0")}.png?v=1734495548`;
+
+    const imageUrl_m = `https://cdn.shopify.com/s/files/1/0589/0192/1956/files/BodyButter${i
       .toString()
-      .padStart(3, "0")}.png?v=1734495548`;
+      .padStart(3, "0")}.png?v=1735800447`;
     const img_m = new Image();
     img_m.src = imageUrl_m;
     img_m.onload = () => {
@@ -260,7 +270,7 @@ function loadImage_m(index) {
     canvas_m.height = window.innerHeight / 1.8;
     const scaleX_m = canvas_m.width / img_m.width;
     const scaleY_m = canvas_m.height / img_m.height;
-    const scale_m = 0.5;
+    const scale_m = 0.3;
     const newWidth_m = img_m.width * scale_m;
     const newHeight_m = img_m.height * scale_m;
     const offsetX_m = (canvas_m.width - newWidth_m) / 2;
